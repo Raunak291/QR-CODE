@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR CODE GENERATOR</title>
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-image: url('cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8zMF9hbl9hYnN0cmFjdF92aXN1YWxpemF0aW9uX29mX2FfYmxvY2tjaGFpbl9uZV80ZWIwODVmNC0yODFlLTRkYTMtYjdlMS00MmY1ZTFkMDkyM2VfMS5qcGc.jpeg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif; 
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        padding: 20px;
+        text-align: center;
+      }
+
+      h2 {
+        color: #070707;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        width: 60%;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #1265be; 
+        color: #f3f2f2; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .qrbox {
+        margin-top: 20px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <main>
+      <h2>Qr Code Generator</h2>
+      <input id="input" type="text" placeholder="Text or Url">
+      <button onclick="generateQrCode()" id="generateBtn">Generate</button>
+      <div class="qrbox">
+        <img id="img" src="demo.png" >
+      </div>
+      <button onclick="download()">Download</button>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
